@@ -5,6 +5,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
 import pandas as pd, joblib
+import subprocess
 from api.database import save_prediction, get_all_predictions
 
 BASE = Path(__file__).resolve().parents[1]
@@ -24,6 +25,11 @@ class PredictIn(BaseModel):
     transmission: str | None = None
     engine_cc: int | None = None
     seats: int | None = None
+
+# Train model if not exists or load existing
+if not MODEL_PATH.exists():
+    print("Model not found. Training new model...")
+    subprocess.run(["python", "ml/train.py"], check=True)
 
 mdl = joblib.load(MODEL_PATH)
 PIPE = mdl["pipeline"]; FEATS = mdl["features"]
