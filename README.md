@@ -158,7 +158,7 @@ This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
 
-Your Name - [@yourusername](https://github.com/yourusername)
+Praneeth Kumar - [@BunnyPraneeth5](https://github.com/BunnyPraneeth5)
 
 ## 🙏 Acknowledgments
 
@@ -169,7 +169,7 @@ Your Name - [@yourusername](https://github.com/yourusername)
 
 ## 📧 Contact
 
-For questions or support, please open an issue or contact: your.email@example.com
+For questions or support, please open an issue or contact: bunnypraneeth25@gmail.com
 
 ---
 
