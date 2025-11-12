@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="mgrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="128" height="128" rx="20" fill="#fff"/>
+  <!-- car body -->
+  <path d="M16 72 L28 56 L100 56 L112 72 L112 80 L24 80 Z" fill="url(#mgrad)"/>
+  <!-- wheels -->
+  <circle cx="36" cy="88" r="8" fill="#0f172a"/>
+  <circle cx="92" cy="88" r="8" fill="#0f172a"/>
+  <!-- ascending arrow -->
+  <path d="M36 44 L56 28 L84 44" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M84 44 L76 36 L94 36 Z" fill="#10b981"/>
+</svg>
