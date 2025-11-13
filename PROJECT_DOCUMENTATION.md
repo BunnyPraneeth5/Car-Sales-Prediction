@@ -974,9 +974,9 @@ For questions, issues, or suggestions:
 
 ---
 
-**Last Updated:** January 2024
+**Last Updated:** November 2025
 
-**Version:** 1.0.0
+**Version:** 1.5.1
 
 **Status:** ✅ Production Ready
 
