@@ -809,9 +809,9 @@ def predict(x: PredictIn):
 
 ---
 
-## 🚀 Future Enhancements
+## 🚀 Future Enhancements 
 
-### Planned Features
+### Planned Features for Jan 2026
 
 1. **User Authentication**
    - Login/Register system
@@ -931,9 +931,9 @@ This project is licensed under the MIT License.
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
+- GitHub: [@BunnyPraneeth5](https://github.com/BunnyPraneeth5)
+- Email: bunnypraneeth25@gmail.com
+- LinkedIn: [Karu Praneeth Kumar](https://linkedin.com/in/karu-praneeth-kumar)
 
 ---
 
@@ -952,7 +952,7 @@ This project is licensed under the MIT License.
 
 For questions, issues, or suggestions:
 - Open an issue on GitHub
-- Email: your.email@example.com
+- Email: bunnypraneeth25@gmail.com
 - Documentation: [README.md](README.md)
 - Deployment Guide: [DEPLOYMENT.md](DEPLOYMENT.md)
 
