@@ -42,7 +42,7 @@ An AI-powered web application that predicts car prices based on various features
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/car-sales-prediction.git
+   git clone https://github.com/BunnyPraneeeth5/car-sales-prediction.git
    cd car-sales-prediction
    ```
 
