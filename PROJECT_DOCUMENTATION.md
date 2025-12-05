@@ -44,7 +44,8 @@
 - 📊 **Real-time Valuation** - Instant price estimates
 - 📱 **Responsive Design** - Works on desktop, tablet, and mobile
 - 💾 **Prediction History** - Stores all predictions in database
-- 🎨 **Modern UI/UX** - Clean, intuitive interface with smooth animations
+- 🎨 **Futuristic UI/UX** - Neon accents, glassmorphism, and dark theme
+- 🎭 **Smooth Animations** - Powered by Framer Motion for engaging interactions
 
 ### Technical Features
 - RESTful API architecture
@@ -63,7 +64,9 @@
 |------------|---------|---------|
 | **React** | 19.2.0 | UI framework for building interactive interfaces |
 | **Vite** | 7.2.2 | Fast build tool and dev server |
-| **TailwindCSS** | 4.1.17 | Utility-first CSS framework for styling |
+| **TailwindCSS** | 4.0+ | Utility-first CSS framework (CSS-first config) |
+| **Framer Motion** | Latest | Animation library for React |
+| **Lucide React** | Latest | Modern icon set |
 | **Axios** | 1.13.2 | HTTP client for API requests |
 
 ### Backend
@@ -71,7 +74,7 @@
 |------------|---------|---------|
 | **FastAPI** | 0.104.1 | Modern Python web framework for APIs |
 | **Uvicorn** | 0.24.0 | ASGI server for running FastAPI |
-| **Python** | 3.11+ | Programming language |
+| **Python** | 3.13+ | Programming language |
 | **Pydantic** | 2.5.0 | Data validation using Python type hints |
 
 ### Machine Learning
@@ -567,13 +570,13 @@ cd car-sales-prediction
 **2. Backend Setup:**
 ```bash
 # Create virtual environment
-python -m venv venv
+python -m venv .venv
 
 # Activate virtual environment
 # Windows:
-venv\Scripts\activate
+.\.venv\Scripts\Activate.ps1
 # Mac/Linux:
-source venv/bin/activate
+source .venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
@@ -679,13 +682,12 @@ car-sales-prediction/
 │   │   ├── App.jsx               # Main component
 │   │   ├── App.css               # Styles
 │   │   ├── Logo.jsx              # Logo component
-│   │   ├── index.css             # Global styles
+│   │   ├── index.css             # Global styles & Tailwind v4 config
 │   │   └── main.jsx              # Entry point
 │   ├── index.html                # HTML template
 │   ├── package.json              # Dependencies
 │   ├── vite.config.js            # Vite config
-│   ├── tailwind.config.js        # Tailwind config
-│   └── postcss.config.js         # PostCSS config
+│
 │
 ├── ml/                           # Machine Learning
 │   ├── train.py                  # Model training script
@@ -699,6 +701,7 @@ car-sales-prediction/
 │   └── predictions.db            # SQLite database
 │
 ├── requirements.txt              # Python dependencies
+├── test_api.py                   # API testing script
 ├── Dockerfile                    # Docker configuration
 ├── .dockerignore                 # Docker ignore file
 ├── Procfile                      # Heroku configuration

@@ -1,4 +1,43 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
+@theme {
+    --color-neon-blue: #00f3ff;
+    --color-neon-purple: #bc13fe;
+    --color-dark-bg: #0a0a0f;
+    --color-glass: rgba(255, 255, 255, 0.05);
+
+    --font-orbitron: 'Orbitron', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+
+    --animate-glow: glow 2s ease-in-out infinite alternate;
+
+    @keyframes glow {
+        0% {
+            box-shadow: 0 0 5px #00f3ff, 0 0 10px #00f3ff;
+        }
+
+        100% {
+            box-shadow: 0 0 20px #00f3ff, 0 0 40px #00f3ff;
+        }
+    }
+}
+
+@utility glass-panel {
+    @apply bg-glass backdrop-blur-lg border border-white/10 shadow-xl;
+}
+
+@utility neon-text {
+    text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+}
+
+@utility scrollbar-hide {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@layer base {
+    body {
+        @apply bg-dark-bg text-white font-inter overflow-x-hidden;
+    }
+}

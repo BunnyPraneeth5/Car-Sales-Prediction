@@ -16,12 +16,14 @@ An AI-powered web application that predicts car prices based on various features
 **Frontend:**
 - React 19
 - Vite
-- TailwindCSS
+- TailwindCSS v4 (CSS-first configuration)
+- Framer Motion (Animations)
+- Lucide React (Icons)
 - Axios
 
 **Backend:**
 - FastAPI
-- Python 3.11
+- Python 3.13
 - Scikit-learn
 - Pandas
 - SQLite
@@ -46,12 +48,24 @@ An AI-powered web application that predicts car prices based on various features
    cd car-sales-prediction
    ```
 
-2. **Install Python dependencies:**
+2. **Set up Python Environment:**
+   ```bash
+   # Create virtual environment
+   python -m venv .venv
+
+   # Activate virtual environment
+   # Windows:
+   .\.venv\Scripts\Activate.ps1
+   # Mac/Linux:
+   source .venv/bin/activate
+   ```
+
+3. **Install Python dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Train the ML model:**
+4. **Train the ML model:**
    ```bash
    python ml/train.py
    ```
@@ -77,7 +91,6 @@ An AI-powered web application that predicts car prices based on various features
 
 ## 📁 Project Structure
 
-```
 car-sales-prediction/
 ├── api/
 │   ├── main.py           # FastAPI application
@@ -86,6 +99,7 @@ car-sales-prediction/
 │   ├── src/
 │   │   ├── App.jsx       # Main React component
 │   │   ├── App.css       # Styles
+│   │   ├── index.css     # Global styles & Tailwind v4 config
 │   │   └── main.jsx      # Entry point
 │   ├── index.html
 │   └── package.json
@@ -94,6 +108,7 @@ car-sales-prediction/
 │   ├── model_store/      # Saved models
 │   └── data/             # Training data
 ├── requirements.txt      # Python dependencies
+├── test_api.py          # API testing script
 ├── Dockerfile           # Docker configuration
 └── README.md
 ```
